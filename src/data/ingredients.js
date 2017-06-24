@@ -119,7 +119,7 @@ export const igredients =
     },
     {
         id : 24,
-        name: 'Oilcloths',
+        name: 'Oilcloth',
         category: ingre
     },
     {

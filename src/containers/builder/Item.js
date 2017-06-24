@@ -9,7 +9,7 @@ class Item extends Component {
         const { id, name, category} = this.props.data
         return (
             <div className="builder-item" title={name}>
-                <div className="builder-img">
+                <div className={`builder-img ${category}`}>
                     <img src={`/assets/img/items/${name}.png`} alt=""/>
                 </div>
                 <span className="arrow fa fa-long-arrow-right">

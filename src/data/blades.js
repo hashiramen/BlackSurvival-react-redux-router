@@ -174,7 +174,7 @@ export const blades =
     },
     {
         id: 82,
-        name: 'Frostwall',
+        name: 'Frostwail',
         category: BLADE
     },
     {
@@ -209,7 +209,7 @@ export const blades =
     },
     {
         id: 102,
-        name: 'Dáinsleif',
+        name: 'Dainsleif',
         category: BLADE
     },
     {
@@ -274,7 +274,7 @@ export const blades =
     },
     {
         id: 101,
-        name: 'Phase Saber',
+        name: 'Phase Sabre',
         category: BLADE
     }
 ]

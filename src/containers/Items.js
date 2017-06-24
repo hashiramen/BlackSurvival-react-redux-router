@@ -36,6 +36,15 @@ class Items extends Component {
                 <div id="categories">
                     <input type="button" onClick={this.handleClick} value="Ingredients" data-category="ingredient"/>
                     <input type="button" onClick={this.handleClick} value="Blades" data-category="blade"/>
+                    <input type="button" onClick={this.handleClick} value="Stabs" data-category="stab"/>
+                    <input type="button" onClick={this.handleClick} value="Blunts" data-category="blunt"/>
+                    <input type="button" onClick={this.handleClick} value="Thrown" data-category="thrown"/>
+                    <input type="button" onClick={this.handleClick} value="Guns" data-category="gun"/>
+                    <input type="button" onClick={this.handleClick} value="Bows" data-category="bow"/>
+                    <input type="button" onClick={this.handleClick} value="Hands" data-category="hand"/>
+                    <input type="button" onClick={this.handleClick} value="Traps" data-category="trap"/>
+                    <input type="button" onClick={this.handleClick} value="Areas" data-category="area"/>
+                    <input type="button" onClick={this.handleClick} value="EXTRAS" data-category="extra"/>
                 </div>
                 <div id="list-of-items">
                     {mappedItems}
