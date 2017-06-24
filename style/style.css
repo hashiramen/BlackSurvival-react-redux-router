@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #eeeeee;
+    color:rgba(0,0,0, .8);
+    font-family: 'Open Sans';
+    overflow-y: scroll;
+}
+
+#container{
+    margin-top:2.3em;
+}
+
+/*character card */
+#characters{
+    max-width: 90%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.character{
+    margin: 5px;
+    z-index: 5;
+    float:left;
+    position: relative;
+    transition: .2s ease-out;
+    background: #fff;
+    flex:1;
+    min-width: 150px;
+    max-width: 150px;
+
+}
+.character-img{
+    z-index: 9;
+    max-width: 180px;
+}
+
+.character-img img{
+    width: 100%;
+}
+
+.character:hover{
+   cursor:pointer;
+   opacity: .7;
+}
+
+/*hover*/
+.hover{
+    z-index: 10;
+    position: fixed;
+    top:0;
+    left:0;
+    padding: 5px;
+    background: rgba(0,0,0, .5);
+   
+}
+
+nav{
+    z-index: 20;
+    position: fixed;
+    width:100%;
+    top:0;
+    left:0;
+    background:#fff;
+    border:  solid rgba(255,255,255,.4);
+    border: none;
+}
+nav ul{
+    max-width: 50%;
+    text-align: center;
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li{
+    flex:1;
+    padding: 5px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: 900;
+    color:rgba(0,0,0, .5);
+}
+
+#chosen-items{
+    width:75%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    font-size: .85em;
+    margin-top: 5em;
+    min-height: 44px;
+}
+
+#chosen-items .chosen-item{
+    margin-right: 1px;
+    transition: .2s ease-out;
+    max-width: 100px;
+    min-width: 50px;
+    display: flex;
+    margin-top: .3em;
+}
+.chosen-item:hover{
+    cursor: pointer;
+    background: rgba(249, 0, 0, 0.8)!important;
+    color:#eeeeee!important;
+}
+.chosen-item .chosen-img{
+    flex:3;
+}
+
+.chosen-img img{
+    width:100%;
+    display: block;
+}
+
+.arrow{
+    flex:2;
+    font-size: 2em;
+    padding: 6px;
+    margin-left: 5px;
+}
+
+#categories{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width:75%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#categories input[type=button]{
+    transition: .2s ease-out;
+    flex:1;
+    padding: 10px;
+    max-width: 12.5%;
+}
+#categories input[type=button]:hover{
+    background: rgba(0,0,0, .5)!important;
+    color:#eeeeee!important;
+    cursor: pointer;
+}
+#list-of-items{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width:75%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#list-of-items .item{
+    transition: .2s ease-out;
+    flex:1;
+    min-width: 23.7%;
+    max-width: 24.2%;
+    text-align: right;
+    padding: 3px;
+    margin: 2px;
+    background: #fff;
+}
+.item p{
+    padding: 0;
+    margin: 0;
+    padding-top:3px;
+    padding-bottom: 3px;
+    margin-right: 5px;
+}
+
+.item-img{
+    width:30%;
+    float:left;
+}
+.item-img img{
+    width:100%;
+    display: block;
+}
+
+.item:hover{
+    background: rgba(0,0,0, .5)!important;
+    color:#eeeeee!important;
+    cursor: pointer;
+}
+
+.builder{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width:85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.builder h2{
+    margin: 0;
+    padding: 0;
+    font-size: 2.3em;
+    flex:1;
+    min-width: 100%;
+    text-align: left;
+}
+
+.builder .builder-img{
+    flex:3;
+    min-width: 35%;
+}
+
+.builder-img img{
+    width:100%;
+}
+
+.builder-list{
+    justify-content: center;
+    flex:9;
+    background:#fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: .85em;
+    margin: auto;
+}
+
+.builder-list .builder-item{
+    max-width: 100px;
+    min-width: 50px;
+    display: flex;
+    margin-top: .3em;
+}
+
+.builder-item .builder-img{
+    flex:3;
+}
+
+.builder-img img{
+    width:100%;
+}
+
+.build-link {
+    flex:1;
+    min-width: 100%;
+}
+
+.build-link .link{
+    width:40%;
+    margin-left: 30%;
+    padding: 2px;
+    position: relative;
+}
+.link:before{
+    content: "Click to copy";
+    color:black;
+    position: absolute;
+    z-index: 30;
+    top:10px;
+}
